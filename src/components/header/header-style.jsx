@@ -4,9 +4,9 @@ export const All = styled.div`
 background-color: #001234;
 // background-color: #222;
 color: #fff9;
-width: 100%;
+width: 300px;
 height: 67px;
-position: relative;
+position: fixed;
 
 ul{
     list-style: none;
@@ -57,7 +57,7 @@ ul > li{
     height: 194px;
     width: 100px;
     font-family: Arial;
-    position: absolute;
+    /* position: absolute; */
     right: 0;
 }
 .logo{
@@ -81,6 +81,7 @@ h1{
 }
 
 @media screen and ( max-width:700px){
+    width: 100%;
     h1{
         padding-top: 5px;
         font-family: Papyrus;

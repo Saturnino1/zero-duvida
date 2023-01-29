@@ -19,7 +19,7 @@ export const Head = () =>{
         }else{
             $('ul').style.right=fora
             $('ul').style.transition = "700ms";
-
+            
             $('.close').style.display = "none"
             $('.close').style.transition = "800ms"
             $('.open').style.transition = "800ms"

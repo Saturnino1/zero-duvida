@@ -5,7 +5,7 @@
 }
 
 h1{
-  font-family: monospace;
+  font-family: Arial;
 }
 
 body{
@@ -23,9 +23,10 @@ body{
   background-color: #C8C8C8;
   overflow-y: auto;
   overflow-x: hidden;
+  position: relative;
 }
 
-@media screen and ( max-width:700px){
+@media screen and ( max-width:500px){
     .main-app{
     width: 100vw;
     height: 100vh;
