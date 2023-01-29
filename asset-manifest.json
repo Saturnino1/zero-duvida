@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.f6df3f6e.css",
-    "main.js": "./static/js/main.794e9c8f.js",
-    "index.html": "./index.html",
-    "main.f6df3f6e.css.map": "./static/css/main.f6df3f6e.css.map",
-    "main.794e9c8f.js.map": "./static/js/main.794e9c8f.js.map"
+    "main.css": "/zero-duvida/static/css/main.4edcdb41.css",
+    "main.js": "/zero-duvida/static/js/main.68594cc7.js",
+    "index.html": "/zero-duvida/index.html",
+    "main.4edcdb41.css.map": "/zero-duvida/static/css/main.4edcdb41.css.map",
+    "main.68594cc7.js.map": "/zero-duvida/static/js/main.68594cc7.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6df3f6e.css",
-    "static/js/main.794e9c8f.js"
+    "static/css/main.4edcdb41.css",
+    "static/js/main.68594cc7.js"
   ]
 }
