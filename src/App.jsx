@@ -4,10 +4,13 @@ import { Home } from './pages/home/home';
 // import styled from 'styled-components';
 function App() {
   return (
-    <div className='main-app'>
-      <Head/>
-      <Home/>
-    </div>
+    <>
+      
+      <div className='main-app'><Head/>
+        <Home/>
+      </div>
+      <div className="tapete"></div>
+    </> 
   );
 }
 

@@ -11,18 +11,20 @@ export const Head = () =>{
         // console.log(menuOpen);
         if (!menuOpen) {
             $('ul').style.right = "0"
+            $('ul').style.opacity="100%"
             $('.close').style.display = "inline"
             $('.open').style.display = "none"
-            $('.close').style.transition = "800ms"
-            $('.open').style.transition = "800ms"
-            $('ul').style.transition = "700ms";
+            $('.close').style.transition = "1s"
+            $('.open').style.transition = "1s"
+            $('ul').style.transition = "1s";
         }else{
             $('ul').style.right=fora
-            $('ul').style.transition = "700ms";
+            $('ul').style.opacity="0%"
+            $('ul').style.transition = "1s";
             
             $('.close').style.display = "none"
-            $('.close').style.transition = "800ms"
-            $('.open').style.transition = "800ms"
+            $('.close').style.transition = "1s"
+            $('.open').style.transition = "1s"
             $('.open').style.display = "inline"
         }
         // (menuOpen? ()=>{
@@ -47,7 +49,7 @@ export const Head = () =>{
                         <div className="close">
                             <AiOutlineClose/>
                         </div>
-                        
+
                     </div>
                      
                     <ul>
@@ -63,3 +65,5 @@ export const Head = () =>{
         </All>
     )
 }
+
+

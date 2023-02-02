@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Estilo =  styled.div`
+    
     h1{
         text-align:center
     }
@@ -10,8 +11,62 @@ export const Estilo =  styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 130px;
+        /* margin-top: 100px; */
+        z-index: 0;
     }
+    .conteiner{
+        width: 100%;
+        height:108px;
+    }
+     
+    .load{
+        font-family: Arial, Helvetica, sans-serif;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        /* background-color: red; */
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        z-index:-1;
+    }
+    .load p{
+        font-size: 30pt;
+        /* background-color: red; */
+        width: 60px;
+        height: 60px;
+        animation-name: rodar;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* transition: 1s; */
+    }
+    .load > span{
+        position: absolute;
+        bottom: 40px;
+        color: #1234
+    }
+
+
+    @keyframes rodar {
+        0%{
+            transform: rotate(0deg);
+            transition: 1s;
+        }
+        100%{
+            transform: rotate(360deg);
+            transition: 1s;
+        }
+    }
+
+
+    .load label{
+        margin-top: -8px; 
+    }
+
     .post-card{
         width: 90vw;
         height: 160px;
@@ -29,7 +84,7 @@ export const Estilo =  styled.div`
     .post-card > .top-info > label{
         display: flex;
         align-items: end;
-
+        
     }
     .post-card > .top-info > label > h3{
         font-size: 12pt;
@@ -54,14 +109,17 @@ export const Estilo =  styled.div`
 
     .post-card >  .card-texto{
         /* background-color: #123; */
-        max-height: 75px;
+        max-height: 55px;
         min-height: 60px;
         margin-bottom: 5px;
-        /* background-color: #5A5A5A; */
+        overflow: hidden;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 2px;
         
     }
     .post-card > .card-texto > p{
-        font: 8pt Arial;
+        font: 9pt Arial;
         /* text-align: justify; */
     }
     .post-card > .card-footer{
@@ -89,7 +147,7 @@ export const Estilo =  styled.div`
 
     @media screen and (min-width: 500px) {
         .post-card{
-            width: 17em;
+            width: 16em;
             height: 8em;
         }
     }
@@ -98,5 +156,11 @@ export const Estilo =  styled.div`
         .post-card >  .card-texto{
             min-height: 80px;
         }
+        .post-card >  .card-texto p{
+           font-size: 14pt;
+        }
+
+        
+        
     }
 `
