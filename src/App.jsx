@@ -1,19 +1,23 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import { Head } from './components/header/header';
-import { Home } from './pages/home/home';
-// import styled from 'styled-components';
+import { RouteCreate } from './components/route/Routes';
+// import { Home } from './pages/home/home';
+
 function App() {
+
   return (
-    <>
-      
-      <div className='main-app'><Head/>
-        <Home/>
+    <BrowserRouter>
+     <div className='main-app'>
+     {/* <BrowserRouter> */}
+        <Head />     
+        <RouteCreate />
       </div>
+      {/* </BrowserRouter> */}
       <div className="tapete"></div>
-    </> 
+
+    </BrowserRouter> 
   );
 }
-
-
 
 export default App;

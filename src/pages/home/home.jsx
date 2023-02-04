@@ -25,7 +25,7 @@ const GetData = async () =>{
 
 const Check = () =>{
     setTimeout(()=>{
-        setMensg("* Verefica sua conecao a internet! *")
+        setMensg("* Verefique sua conecao a internet! *")
         },6000)
 }
 
@@ -42,7 +42,7 @@ useEffect(()=>{
                 <p>
                     <BiLoader />
                 </p> 
-                <label>loading...</label>     
+                <label>A carregar...</label>     
                 <span>{msg}</span>
                 {Check()}
                 </div>
@@ -52,16 +52,11 @@ useEffect(()=>{
  }    
 
 
-// hor.toString()
-// console.log(hora);
-// console.log(hora.substring(0,10).split('-').reverse().join('-'));
-// console.log(hora.substring(0,10));
-
   return (
     <>
         
         <Estilo>
-        <Name nome = "Home"/>
+        <Name nome = "Publicações"/>
         <div className="conteiner"></div>
             <div className="all-card">
             {data.map((data)=>{

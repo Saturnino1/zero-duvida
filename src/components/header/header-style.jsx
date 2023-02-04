@@ -25,10 +25,33 @@ ul{
     right: ${fora};
     transition: 2s;
     opacity: 0%;
+    border-top: 1px solid #C8C8C8;
 }
 ul > li{
-    text-align: center;
+    margin-left: 10px;
     margin-bottom: 5px;
+}
+form > input {
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    background-color: #1234;
+    color: #d4d4d4ed;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 9pt;
+    padding-left: 3px;
+}
+
+form > input::placeholder{
+    color: #d3d3d3;
+    font-size: 7pt;
+}
+
+
+ul > li > a{
+    color: white;
+    text-decoration: none;
 }
 .menu-logo{
     width: 40px;

@@ -1,6 +1,11 @@
-import {AiOutlineUnorderedList, AiFillApple, AiOutlineClose} from 'react-icons/ai'
+import {AiOutlineUnorderedList, AiOutlineClose} from 'react-icons/ai'
 import { All } from './header-style'
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
+import { MdHomeFilled} from 'react-icons/md'
+import {CgProfile } from 'react-icons/cg'
+import {GiNewspaper} from 'react-icons/gi'
+import {BsFillPlusCircleFill} from 'react-icons/bs'
 
 export const Head = () =>{
     const [menuOpen, setMenuOpen] = useState(false)
@@ -27,20 +32,18 @@ export const Head = () =>{
             $('.open').style.transition = "1s"
             $('.open').style.display = "inline"
         }
-        // (menuOpen? ()=>{
-        //     $('ul').style.display="block"
-        // }: () =>{
-        //     $('ul').style.display="none"
-        // })
-
     }
+
     return(
         <All>
             <h1>Zero Duvidas</h1>
             <nav>
                 <div className="logo">
-                    <AiFillApple/>
+                    <BsFillPlusCircleFill/>
                 </div>
+                <form>
+                    <input id='pesqui' type="text"  placeholder='pesquisar..'/>
+                </form>
                 <div className='nav2'>
                     <div className="menu-logo" onClick={toogleMenu}>
                         <div className="open">
@@ -52,12 +55,18 @@ export const Head = () =>{
 
                     </div>
                      
-                    <ul>
-                        <li>Home</li>
-                        <li>Perfil</li>
-                        <li>Eventos</li>
-                        <li>Sobre nos</li>
-                        <li>Políticas</li>
+                    <ul>                        
+                            <li><Link to='/zero-duvida/home'><i><MdHomeFilled/></i>Início</Link></li>
+                            <li><Link to = '/zero-duvida/profile' ><i><CgProfile/></i> Perfil</Link> </li>
+                            <li><Link to= '/zero-duvida/eventos' ><i><GiNewspaper/></i>Eventos</Link> </li>
+                            <li><Link to='/zero-duvida/about' >Sobre nós</Link> </li>
+                            <li><Link to = '/zero-duvida/politica'>Políticas</Link> </li>
+
+                            {/* <li>Home</li>
+                            <li>Perfil </li>
+                            <li>Eventos </li>
+                            <li>Sobre nos </li>
+                            <li>Políticas </li> */}
                     </ul>
                        
                 </div>
