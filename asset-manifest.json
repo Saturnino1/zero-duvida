@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/zero-duvida/static/css/main.d0f02840.css",
-    "main.js": "/zero-duvida/static/js/main.2a5070d7.js",
+    "main.js": "/zero-duvida/static/js/main.b749a51a.js",
+    "static/media/fundo-student2.png": "/zero-duvida/static/media/fundo-student2.e1c9da561b92c045baa2.png",
     "index.html": "/zero-duvida/index.html",
     "main.d0f02840.css.map": "/zero-duvida/static/css/main.d0f02840.css.map",
-    "main.2a5070d7.js.map": "/zero-duvida/static/js/main.2a5070d7.js.map"
+    "main.b749a51a.js.map": "/zero-duvida/static/js/main.b749a51a.js.map"
   },
   "entrypoints": [
     "static/css/main.d0f02840.css",
-    "static/js/main.2a5070d7.js"
+    "static/js/main.b749a51a.js"
   ]
 }
