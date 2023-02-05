@@ -1,19 +1,19 @@
 import { ProfStyle } from "./profile-style"
-import { FcBusinessman } from "react-icons/fc"
+// import { FcBusinessman } from "react-icons/fc"
 import { Name } from "../../components/PageName/name"
+import { Head } from "../../components/header/header"
 
 
 export const MyProfile = () =>{
     return(
       <>
+        <Head requires={{"search":false,"add":true,"menu": true}} />
         <Name nome = "Meu perfil"/>
         <ProfStyle>
           <main>
             <div className="cover"></div>
             <picture>
-              <FcBusinessman 
-
-              />
+              <img src="https://avatars.githubusercontent.com/u/99210803?s=400&u=5bf3a1886c65eada560efe0ca69cc6fa7f7bb267&v=4" alt="foto de perfil" />
             </picture>
             <h3>Saturnino Moreira Mendes</h3>
           </main>
@@ -28,7 +28,7 @@ export const MyProfile = () =>{
               <div className="comment-num info"></div>
             </div>
             <div className="mypubs info" >
-              {'* Sem publicações *'}
+              <p>{'* Sem publicações *'}</p>
             </div>
           </div>
           

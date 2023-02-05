@@ -6,6 +6,7 @@ import {MdThumbUp} from 'react-icons/md'
 import {BiLoader} from 'react-icons/bi'
 import axios from 'axios'
 import { Name } from '../../components/PageName/name';
+import { Head } from '../../components/header/header'
 
 export const Home = () => {
 
@@ -36,7 +37,8 @@ useEffect(()=>{
  while ( data.length === 0  ) {    // data.length === 0 
     return(
         <>
-            <Name nome = "Home"/>
+            <Head requires={{"search":true,"add":true,"menu": true}} />
+            <Name nome = "Publicações"/>
             <Estilo>
                 <div className="load">
                 <p>
@@ -54,7 +56,7 @@ useEffect(()=>{
 
   return (
     <>
-        
+        <Head /> 
         <Estilo>
         <Name nome = "Publicações"/>
         <div className="conteiner"></div>

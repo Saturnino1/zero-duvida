@@ -3,7 +3,7 @@ import {Estilo} from './name-style'
 
 
 export const Name = ({nome}) => {
-    // 
+    //   
   return (
     <Estilo>
     <div className="all">

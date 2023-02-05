@@ -12,9 +12,10 @@ align-items:center;
 position: fixed;
 /* top: 0; */
 margin-top:67px;
-z-index: 0;
+z-index: 1;
 h2{
   color:#123;
+  font-size: 12pt;
 }
 @media screen and ( max-width:500px ){
     width: 100%;

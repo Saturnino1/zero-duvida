@@ -19,13 +19,16 @@ export const ProfStyle = styled.div`
         height: 85px;
         border-radius: 40px;
         position: absolute;
+        z-index: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    picture:first-child{
-        font-size: 30pt;
-        color: red;
+
+    picture > img{
+        width: 80px;
+        border-radius: 40px;
+
     }
 
     .myinfo-conteiner{
@@ -71,7 +74,14 @@ export const ProfStyle = styled.div`
     }
 
     .mypubs{
-        min-height: 50px;
+        min-height: 100px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 97%;
+    }
+    .mypubs > p{
+        opacity: 40%;
     }
 
 

@@ -7,7 +7,7 @@ color: #fff9;
 width: 280px;
 height: 67px;
 position: fixed;
-z-index: 1;
+z-index: 2;
 /* position: ; */
 ul{
     list-style: none;
@@ -37,10 +37,11 @@ form > input {
     outline: none;
     background-color: #1234;
     color: #d4d4d4ed;
-    width: 100px;
+    width: 150px;
     margin-top: 5px;
     font-size: 9pt;
     padding-left: 3px;
+    text-align:center;
 }
 
 form > input::placeholder{
@@ -81,10 +82,14 @@ ul > li > a{
     height: 10px;
     // background-color: whitesmoke
 }
+.logo:first-child{
+    font-size: 18pt;
+    cursor: pointer;
+}
 nav{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     /* box-shadow: 4px 0px 6px 3px #F7FF00; */
     height: 2px;
 }
@@ -92,6 +97,7 @@ h1{
     text-align:center;
     font-family: Papyrus;
     font-size:  13pt;
+    cursor:auto;
     /* box-shadow: 4px 0px 6px 3px #F7FF00; */
 }
 @media screen and ( max-width:500px){
