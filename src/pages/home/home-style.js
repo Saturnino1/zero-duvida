@@ -68,6 +68,8 @@ export const Estilo =  styled.div`
     }
 
     .post-card{
+        display: flex;
+        justify-content: center;
         width: 90vw;
         height: 160px;
         background-color: #FFFFFF;

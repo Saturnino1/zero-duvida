@@ -4,7 +4,7 @@ export const All = styled.div`
 background-color: #001234;
 // background-color: #222;
 color: #fff9;
-width: 280px;
+width: 100%;
 height: 67px;
 position: fixed;
 z-index: 2;
