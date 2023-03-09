@@ -8,7 +8,8 @@ export const FooterStyle = styled.div`
     min-height: 100px;
     width: 100%;
     padding: 10px; 
-    position: relative;
+    position: absolute;
+    bottom: 0px;
     display:flex;
     flex-direction: column;
     justify-content:center;
